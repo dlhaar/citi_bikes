@@ -2,7 +2,7 @@
 
 The Citi Bikes ride predictor aims to predict the number of rentals at 30 stations in Lower Manhattan.
 
-[Citi Bike stations](src/map.png "Citi Bike stations")
+![Citi Bike stations](src/map.png "Citi Bike stations")
 
 ## Requirements
 To run the notebooks you should have jupyter lab or jupyter notebook installed
