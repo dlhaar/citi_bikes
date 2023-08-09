@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c2cba7a8c0e8a7667e53644e45caebdc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c2cba7a8c0e8a7667e53644e45caebdc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c2cba7a8c0e8a7667e53644e45caebdc = L.map(
+                "map_c2cba7a8c0e8a7667e53644e45caebdc",
+                {
+                    center: [40.70868217336032, -74.0110311319653],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_56f21282313cc2d7f7af13b2b036ed31 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var marker_21553f35cbdb4e047f24c3b1f6d7e61b = L.marker(
+                [40.70122128, -74.01234218],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_746dc24afecbb77a4f1308f1b35f3b07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_21553f35cbdb4e047f24c3b1f6d7e61b.setIcon(icon_746dc24afecbb77a4f1308f1b35f3b07);
+        
+    
+        var popup_a60c883547ca05401b4a8dad32562502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6bc2c807ba3d51d3dac5577416f3379 = $(`<div id="html_c6bc2c807ba3d51d3dac5577416f3379" style="width: 100.0%; height: 100.0%;">Station id 4846.01</div>`)[0];
+                popup_a60c883547ca05401b4a8dad32562502.setContent(html_c6bc2c807ba3d51d3dac5577416f3379);
+            
+        
+
+        marker_21553f35cbdb4e047f24c3b1f6d7e61b.bindPopup(popup_a60c883547ca05401b4a8dad32562502)
+        ;
+
+        
+    
+    
+            marker_21553f35cbdb4e047f24c3b1f6d7e61b.bindTooltip(
+                `<div>
+                     South St & Whitehall St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14cc66017c41606ed7c31e3c54a38279 = L.marker(
+                [40.701907, -74.013942],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_dfea89c78843ef43a7f7ceb27e164a4d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_14cc66017c41606ed7c31e3c54a38279.setIcon(icon_dfea89c78843ef43a7f7ceb27e164a4d);
+        
+    
+        var popup_f7c34b5b28216c24292529b161ba3431 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b724e75c7aebf92a684e6f9474844772 = $(`<div id="html_b724e75c7aebf92a684e6f9474844772" style="width: 100.0%; height: 100.0%;">Station id 4889.06</div>`)[0];
+                popup_f7c34b5b28216c24292529b161ba3431.setContent(html_b724e75c7aebf92a684e6f9474844772);
+            
+        
+
+        marker_14cc66017c41606ed7c31e3c54a38279.bindPopup(popup_f7c34b5b28216c24292529b161ba3431)
+        ;
+
+        
+    
+    
+            marker_14cc66017c41606ed7c31e3c54a38279.bindTooltip(
+                `<div>
+                     Bus Slip & State St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a56623631776770c88fb6b907bfbec32 = L.marker(
+                [40.70355377, -74.00670227],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_cbe3d0971508ec30d8b20db3cac0eea7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a56623631776770c88fb6b907bfbec32.setIcon(icon_cbe3d0971508ec30d8b20db3cac0eea7);
+        
+    
+        var popup_66c85790a78f12c5db0bdfda5715bd87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0e4d329e90dd5a820b27f771f93c884 = $(`<div id="html_d0e4d329e90dd5a820b27f771f93c884" style="width: 100.0%; height: 100.0%;">Station id 4953.04</div>`)[0];
+                popup_66c85790a78f12c5db0bdfda5715bd87.setContent(html_d0e4d329e90dd5a820b27f771f93c884);
+            
+        
+
+        marker_a56623631776770c88fb6b907bfbec32.bindPopup(popup_66c85790a78f12c5db0bdfda5715bd87)
+        ;
+
+        
+    
+    
+            marker_a56623631776770c88fb6b907bfbec32.bindTooltip(
+                `<div>
+                     South St & Gouverneur Ln
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1bea139dece20461ab44205b22316815 = L.marker(
+                [40.70463334, -74.01361706],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_76149bdbb56cc2e6cc75446672d38111 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1bea139dece20461ab44205b22316815.setIcon(icon_76149bdbb56cc2e6cc75446672d38111);
+        
+    
+        var popup_1c4df2941856c46252fccd51d8666049 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_528a499a248376a7fee8cbee48b8bf2c = $(`<div id="html_528a499a248376a7fee8cbee48b8bf2c" style="width: 100.0%; height: 100.0%;">Station id 4962.01</div>`)[0];
+                popup_1c4df2941856c46252fccd51d8666049.setContent(html_528a499a248376a7fee8cbee48b8bf2c);
+            
+        
+
+        marker_1bea139dece20461ab44205b22316815.bindPopup(popup_1c4df2941856c46252fccd51d8666049)
+        ;
+
+        
+    
+    
+            marker_1bea139dece20461ab44205b22316815.bindTooltip(
+                `<div>
+                     Broadway & Battery Pl
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1d83482625e28d9254ac79b65f0d6ee = L.marker(
+                [40.70374763, -74.013132572],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_3d74a41ce20dac6a47e7638760d3e60e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_a1d83482625e28d9254ac79b65f0d6ee.setIcon(icon_3d74a41ce20dac6a47e7638760d3e60e);
+        
+    
+        var popup_6ec434a1b9dca24773dd325481644e75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bd22f1cf2014991f8c3cd765f3fd7a6 = $(`<div id="html_0bd22f1cf2014991f8c3cd765f3fd7a6" style="width: 100.0%; height: 100.0%;">Station id 4962.02</div>`)[0];
+                popup_6ec434a1b9dca24773dd325481644e75.setContent(html_0bd22f1cf2014991f8c3cd765f3fd7a6);
+            
+        
+
+        marker_a1d83482625e28d9254ac79b65f0d6ee.bindPopup(popup_6ec434a1b9dca24773dd325481644e75)
+        ;
+
+        
+    
+    
+            marker_a1d83482625e28d9254ac79b65f0d6ee.bindTooltip(
+                `<div>
+                     Whitehall St & Bridge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1703ceafaec249a113fb3e2b40ab7e2b = L.marker(
+                [40.70365182, -74.01167797],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_67731b3046142ce42797ec7d8af4d142 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1703ceafaec249a113fb3e2b40ab7e2b.setIcon(icon_67731b3046142ce42797ec7d8af4d142);
+        
+    
+        var popup_04036a438ddae1554b16644d5b2231f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6737c7e60ddb3ecbe948564dfb96c3e = $(`<div id="html_c6737c7e60ddb3ecbe948564dfb96c3e" style="width: 100.0%; height: 100.0%;">Station id 4962.08</div>`)[0];
+                popup_04036a438ddae1554b16644d5b2231f2.setContent(html_c6737c7e60ddb3ecbe948564dfb96c3e);
+            
+        
+
+        marker_1703ceafaec249a113fb3e2b40ab7e2b.bindPopup(popup_04036a438ddae1554b16644d5b2231f2)
+        ;
+
+        
+    
+    
+            marker_1703ceafaec249a113fb3e2b40ab7e2b.bindTooltip(
+                `<div>
+                     Broad St & Bridge St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfd06d86a35b3b634e5ec0105f10f985 = L.marker(
+                [40.7047177, -74.00926027],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_3e164cc31decdaf8a0788a88b865d1e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dfd06d86a35b3b634e5ec0105f10f985.setIcon(icon_3e164cc31decdaf8a0788a88b865d1e0);
+        
+    
+        var popup_e97f233a71394461dc0026450a5a3f2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_282e5519a85c316f6c655eac8ecb81f0 = $(`<div id="html_282e5519a85c316f6c655eac8ecb81f0" style="width: 100.0%; height: 100.0%;">Station id 4993.02</div>`)[0];
+                popup_e97f233a71394461dc0026450a5a3f2d.setContent(html_282e5519a85c316f6c655eac8ecb81f0);
+            
+        
+
+        marker_dfd06d86a35b3b634e5ec0105f10f985.bindPopup(popup_e97f233a71394461dc0026450a5a3f2d)
+        ;
+
+        
+    
+    
+            marker_dfd06d86a35b3b634e5ec0105f10f985.bindTooltip(
+                `<div>
+                     Pearl St & Hanover Square
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_794a595ecd035d50da7c7ee6ee5cb373 = L.marker(
+                [40.70336686695866, -74.007867872715],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_c8e369530d9a11745a085a84882a3107 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_794a595ecd035d50da7c7ee6ee5cb373.setIcon(icon_c8e369530d9a11745a085a84882a3107);
+        
+    
+        var popup_df39476242ac4e11cf633218d9f04374 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df2a0e76e65a9d782b5b7cc736756644 = $(`<div id="html_df2a0e76e65a9d782b5b7cc736756644" style="width: 100.0%; height: 100.0%;">Station id 4993.13</div>`)[0];
+                popup_df39476242ac4e11cf633218d9f04374.setContent(html_df2a0e76e65a9d782b5b7cc736756644);
+            
+        
+
+        marker_794a595ecd035d50da7c7ee6ee5cb373.bindPopup(popup_df39476242ac4e11cf633218d9f04374)
+        ;
+
+        
+    
+    
+            marker_794a595ecd035d50da7c7ee6ee5cb373.bindTooltip(
+                `<div>
+                     Old Slip & South St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff572b0ad53f6a35b3d415a9bc1bfc0d = L.marker(
+                [40.70569254, -74.01677685],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_30340e410574f877d908914747a611bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ff572b0ad53f6a35b3d415a9bc1bfc0d.setIcon(icon_30340e410574f877d908914747a611bf);
+        
+    
+        var popup_d572ca13f56e28af326754c80307cc48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31ed57687d42940dca6c14380b4e19ed = $(`<div id="html_31ed57687d42940dca6c14380b4e19ed" style="width: 100.0%; height: 100.0%;">Station id 5001.08</div>`)[0];
+                popup_d572ca13f56e28af326754c80307cc48.setContent(html_31ed57687d42940dca6c14380b4e19ed);
+            
+        
+
+        marker_ff572b0ad53f6a35b3d415a9bc1bfc0d.bindPopup(popup_d572ca13f56e28af326754c80307cc48)
+        ;
+
+        
+    
+    
+            marker_ff572b0ad53f6a35b3d415a9bc1bfc0d.bindTooltip(
+                `<div>
+                     Little West St & 1 Pl
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce20592c27b29233eb80da6698fc488c = L.marker(
+                [40.70610702, -74.012885809],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_e2f7300ee6ac7a8aaae8b87958517720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ce20592c27b29233eb80da6698fc488c.setIcon(icon_e2f7300ee6ac7a8aaae8b87958517720);
+        
+    
+        var popup_9a2c582dee1df2f7dbd54eba9f8a660f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f65c3c84f42eda122d05ecf5ffe1d5b = $(`<div id="html_8f65c3c84f42eda122d05ecf5ffe1d5b" style="width: 100.0%; height: 100.0%;">Station id 5033.01</div>`)[0];
+                popup_9a2c582dee1df2f7dbd54eba9f8a660f.setContent(html_8f65c3c84f42eda122d05ecf5ffe1d5b);
+            
+        
+
+        marker_ce20592c27b29233eb80da6698fc488c.bindPopup(popup_9a2c582dee1df2f7dbd54eba9f8a660f)
+        ;
+
+        
+    
+    
+            marker_ce20592c27b29233eb80da6698fc488c.bindTooltip(
+                `<div>
+                     Broadway & Morris St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_021808854f9b9bb3ba0558b2e8459b13 = L.marker(
+                [40.708454013, -74.007070422],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_6f2f1a88d21838b35d25c6aec313bcb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_021808854f9b9bb3ba0558b2e8459b13.setIcon(icon_6f2f1a88d21838b35d25c6aec313bcb0);
+        
+    
+        var popup_944f4b6b245bfe760ef8bc71782515fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_854005e7ee0f18d30504637a5fb66b9b = $(`<div id="html_854005e7ee0f18d30504637a5fb66b9b" style="width: 100.0%; height: 100.0%;">Station id 5065.04</div>`)[0];
+                popup_944f4b6b245bfe760ef8bc71782515fc.setContent(html_854005e7ee0f18d30504637a5fb66b9b);
+            
+        
+
+        marker_021808854f9b9bb3ba0558b2e8459b13.bindPopup(popup_944f4b6b245bfe760ef8bc71782515fc)
+        ;
+
+        
+    
+    
+            marker_021808854f9b9bb3ba0558b2e8459b13.bindTooltip(
+                `<div>
+                     John St & William St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21008e4116743013314b0eced6f4f386 = L.marker(
+                [40.70717936, -74.00887308],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_b219438f1e6c6725149752d3f9325732 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_21008e4116743013314b0eced6f4f386.setIcon(icon_b219438f1e6c6725149752d3f9325732);
+        
+    
+        var popup_7a7f969dd206e0265ddb8b3f6035f477 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cebf3c88ccf7ee81e4ae37113f8d8792 = $(`<div id="html_cebf3c88ccf7ee81e4ae37113f8d8792" style="width: 100.0%; height: 100.0%;">Station id 5065.12</div>`)[0];
+                popup_7a7f969dd206e0265ddb8b3f6035f477.setContent(html_cebf3c88ccf7ee81e4ae37113f8d8792);
+            
+        
+
+        marker_21008e4116743013314b0eced6f4f386.bindPopup(popup_7a7f969dd206e0265ddb8b3f6035f477)
+        ;
+
+        
+    
+    
+            marker_21008e4116743013314b0eced6f4f386.bindTooltip(
+                `<div>
+                     William St & Pine St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0148a84454999632f07f730ef48eec0c = L.marker(
+                [40.708532572, -74.00510478],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_ae9ad5dc6f4b0c868b007e9951ed13cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0148a84454999632f07f730ef48eec0c.setIcon(icon_ae9ad5dc6f4b0c868b007e9951ed13cf);
+        
+    
+        var popup_f6f028056a82b9764efc3bf409ddd964 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5391c4bc91d1eb3ae99f21120d8c34f0 = $(`<div id="html_5391c4bc91d1eb3ae99f21120d8c34f0" style="width: 100.0%; height: 100.0%;">Station id 5065.14</div>`)[0];
+                popup_f6f028056a82b9764efc3bf409ddd964.setContent(html_5391c4bc91d1eb3ae99f21120d8c34f0);
+            
+        
+
+        marker_0148a84454999632f07f730ef48eec0c.bindPopup(popup_f6f028056a82b9764efc3bf409ddd964)
+        ;
+
+        
+    
+    
+            marker_0148a84454999632f07f730ef48eec0c.bindTooltip(
+                `<div>
+                     Cliff St & Fulton St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f39ae4e3236688efea2216d3ba53835 = L.marker(
+                [40.70806582380646, -74.0135595202446],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_92e91b77d22d668053794db3cb6e9492 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_4f39ae4e3236688efea2216d3ba53835.setIcon(icon_92e91b77d22d668053794db3cb6e9492);
+        
+    
+        var popup_123f0c29f67069e6c3c43c2d82f5dcd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75b3d7d61361f266476cd1470ac7fa0d = $(`<div id="html_75b3d7d61361f266476cd1470ac7fa0d" style="width: 100.0%; height: 100.0%;">Station id 5073.07</div>`)[0];
+                popup_123f0c29f67069e6c3c43c2d82f5dcd4.setContent(html_75b3d7d61361f266476cd1470ac7fa0d);
+            
+        
+
+        marker_4f39ae4e3236688efea2216d3ba53835.bindPopup(popup_123f0c29f67069e6c3c43c2d82f5dcd4)
+        ;
+
+        
+    
+    
+            marker_4f39ae4e3236688efea2216d3ba53835.bindTooltip(
+                `<div>
+                     Greenwich St & Rector St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_289b7fe23febbab4d6639791cca81b9a = L.marker(
+                [40.707789302, -74.001261473],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_1be1858306be91846359323d6663ac36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_289b7fe23febbab4d6639791cca81b9a.setIcon(icon_1be1858306be91846359323d6663ac36);
+        
+    
+        var popup_100132e586288d729679cb4e4080c701 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36c7d12b19ea9490e74f23f0d436729b = $(`<div id="html_36c7d12b19ea9490e74f23f0d436729b" style="width: 100.0%; height: 100.0%;">Station id 5096.12</div>`)[0];
+                popup_100132e586288d729679cb4e4080c701.setContent(html_36c7d12b19ea9490e74f23f0d436729b);
+            
+        
+
+        marker_289b7fe23febbab4d6639791cca81b9a.bindPopup(popup_100132e586288d729679cb4e4080c701)
+        ;
+
+        
+    
+    
+            marker_289b7fe23febbab4d6639791cca81b9a.bindTooltip(
+                `<div>
+                     Peck Slip & South St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06aecc3b137d4b3e250176dec14174e2 = L.marker(
+                [40.70905623, -74.01043382],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_d0ed5442bc4a3586f7d5eb52346a5e5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_06aecc3b137d4b3e250176dec14174e2.setIcon(icon_d0ed5442bc4a3586f7d5eb52346a5e5b);
+        
+    
+        var popup_6507b2c1d5891c225091fb24e63f6ac6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2eda86b58efeffa12c015e0b357524b = $(`<div id="html_f2eda86b58efeffa12c015e0b357524b" style="width: 100.0%; height: 100.0%;">Station id 5105.01</div>`)[0];
+                popup_6507b2c1d5891c225091fb24e63f6ac6.setContent(html_f2eda86b58efeffa12c015e0b357524b);
+            
+        
+
+        marker_06aecc3b137d4b3e250176dec14174e2.bindPopup(popup_6507b2c1d5891c225091fb24e63f6ac6)
+        ;
+
+        
+    
+    
+            marker_06aecc3b137d4b3e250176dec14174e2.bindTooltip(
+                `<div>
+                     Liberty St & Broadway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa81581e5413ea7faa4a10cb1305af5a = L.marker(
+                [40.70834698, -74.01713445],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_154137f8e2d657a6129cb1a7b65cb2b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aa81581e5413ea7faa4a10cb1305af5a.setIcon(icon_154137f8e2d657a6129cb1a7b65cb2b9);
+        
+    
+        var popup_54ced2ec9ae9b62c4e9dbc2b999dc34b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce6ba88431835c5086b103c22e614069 = $(`<div id="html_ce6ba88431835c5086b103c22e614069" style="width: 100.0%; height: 100.0%;">Station id 5114.06</div>`)[0];
+                popup_54ced2ec9ae9b62c4e9dbc2b999dc34b.setContent(html_ce6ba88431835c5086b103c22e614069);
+            
+        
+
+        marker_aa81581e5413ea7faa4a10cb1305af5a.bindPopup(popup_54ced2ec9ae9b62c4e9dbc2b999dc34b)
+        ;
+
+        
+    
+    
+            marker_aa81581e5413ea7faa4a10cb1305af5a.bindTooltip(
+                `<div>
+                     West Thames St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8f620db8ceaaf39d966b4bf8ace2353 = L.marker(
+                [40.709601, -74.006551],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_f90505648a7b64d05094f893c9d156c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f8f620db8ceaaf39d966b4bf8ace2353.setIcon(icon_f90505648a7b64d05094f893c9d156c7);
+        
+    
+        var popup_6df4c0e51c80886306f07cc77ea79853 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef8c373ea37f3ff23354a0844039f172 = $(`<div id="html_ef8c373ea37f3ff23354a0844039f172" style="width: 100.0%; height: 100.0%;">Station id 5137.11</div>`)[0];
+                popup_6df4c0e51c80886306f07cc77ea79853.setContent(html_ef8c373ea37f3ff23354a0844039f172);
+            
+        
+
+        marker_f8f620db8ceaaf39d966b4bf8ace2353.bindPopup(popup_6df4c0e51c80886306f07cc77ea79853)
+        ;
+
+        
+    
+    
+            marker_f8f620db8ceaaf39d966b4bf8ace2353.bindTooltip(
+                `<div>
+                     Fulton St & William St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c1fddab5c6d9cdacd1306d51bfbfe6d = L.marker(
+                [40.7103231, -74.0043228],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_28157011c45a4a067f2eb3da08c1c522 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_2c1fddab5c6d9cdacd1306d51bfbfe6d.setIcon(icon_28157011c45a4a067f2eb3da08c1c522);
+        
+    
+        var popup_a620256c67a823f44c10a22830caf3de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_500f680ecd9b18494ed9c7717a6170d4 = $(`<div id="html_500f680ecd9b18494ed9c7717a6170d4" style="width: 100.0%; height: 100.0%;">Station id 5137.13</div>`)[0];
+                popup_a620256c67a823f44c10a22830caf3de.setContent(html_500f680ecd9b18494ed9c7717a6170d4);
+            
+        
+
+        marker_2c1fddab5c6d9cdacd1306d51bfbfe6d.bindPopup(popup_a620256c67a823f44c10a22830caf3de)
+        ;
+
+        
+    
+    
+            marker_2c1fddab5c6d9cdacd1306d51bfbfe6d.bindTooltip(
+                `<div>
+                     Spruce St & Gold St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76fc616ebc6e25ac94f53d58352ac55b = L.marker(
+                [40.70872426, -74.013092875],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_1d2e569271afa4778ed5df8d86317f3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_76fc616ebc6e25ac94f53d58352ac55b.setIcon(icon_1d2e569271afa4778ed5df8d86317f3c);
+        
+    
+        var popup_4de6bdd839588ab74df22df6b6518f96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc68f6d91ed1be9cb8124cd4c4a2fe80 = $(`<div id="html_fc68f6d91ed1be9cb8124cd4c4a2fe80" style="width: 100.0%; height: 100.0%;">Station id 5145.02</div>`)[0];
+                popup_4de6bdd839588ab74df22df6b6518f96.setContent(html_fc68f6d91ed1be9cb8124cd4c4a2fe80);
+            
+        
+
+        marker_76fc616ebc6e25ac94f53d58352ac55b.bindPopup(popup_4de6bdd839588ab74df22df6b6518f96)
+        ;
+
+        
+    
+    
+            marker_76fc616ebc6e25ac94f53d58352ac55b.bindTooltip(
+                `<div>
+                     Albany St & Greenwich St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7810d93c7c3a9bd6e191c5d91490119d = L.marker(
+                [40.711186528, -74.00948441],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_0cb22c32dba44ac8562b426f0aff74c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7810d93c7c3a9bd6e191c5d91490119d.setIcon(icon_0cb22c32dba44ac8562b426f0aff74c2);
+        
+    
+        var popup_1a9cfbe1019323a71630893d37ca956f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2d2a7ec17edd05617d5b6bdc9a8ec4e = $(`<div id="html_f2d2a7ec17edd05617d5b6bdc9a8ec4e" style="width: 100.0%; height: 100.0%;">Station id 5175.08</div>`)[0];
+                popup_1a9cfbe1019323a71630893d37ca956f.setContent(html_f2d2a7ec17edd05617d5b6bdc9a8ec4e);
+            
+        
+
+        marker_7810d93c7c3a9bd6e191c5d91490119d.bindPopup(popup_1a9cfbe1019323a71630893d37ca956f)
+        ;
+
+        
+    
+    
+            marker_7810d93c7c3a9bd6e191c5d91490119d.bindTooltip(
+                `<div>
+                     Fulton St & Broadway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9cc6a08dc84ef90766d2f103a9a38610 = L.marker(
+                [40.711444, -74.014847],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_1fdc74b57d01c3446cbeba55d775bbb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_9cc6a08dc84ef90766d2f103a9a38610.setIcon(icon_1fdc74b57d01c3446cbeba55d775bbb3);
+        
+    
+        var popup_5aa14ae3a8e35eb72e3d01bd25f01635 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09b476cea46a2826dfef1f63763ab376 = $(`<div id="html_09b476cea46a2826dfef1f63763ab376" style="width: 100.0%; height: 100.0%;">Station id 5184.08</div>`)[0];
+                popup_5aa14ae3a8e35eb72e3d01bd25f01635.setContent(html_09b476cea46a2826dfef1f63763ab376);
+            
+        
+
+        marker_9cc6a08dc84ef90766d2f103a9a38610.bindPopup(popup_5aa14ae3a8e35eb72e3d01bd25f01635)
+        ;
+
+        
+    
+    
+            marker_9cc6a08dc84ef90766d2f103a9a38610.bindTooltip(
+                `<div>
+                     West St & Liberty St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_802398b5e752ebb2bc8e43564b4684b4 = L.marker(
+                [40.712784529, -74.004562378],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_eebbd9b14dae990408d540753b436618 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_802398b5e752ebb2bc8e43564b4684b4.setIcon(icon_eebbd9b14dae990408d540753b436618);
+        
+    
+        var popup_25ef1d7655f70c1baf0250cb617a8733 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dcf553b887c7621aa5a30840f7bf051 = $(`<div id="html_3dcf553b887c7621aa5a30840f7bf051" style="width: 100.0%; height: 100.0%;">Station id 5207.01</div>`)[0];
+                popup_25ef1d7655f70c1baf0250cb617a8733.setContent(html_3dcf553b887c7621aa5a30840f7bf051);
+            
+        
+
+        marker_802398b5e752ebb2bc8e43564b4684b4.bindPopup(popup_25ef1d7655f70c1baf0250cb617a8733)
+        ;
+
+        
+    
+    
+            marker_802398b5e752ebb2bc8e43564b4684b4.bindTooltip(
+                `<div>
+                     Centre St & Chambers St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e552baf167dbd39d2fd8571edb14af5 = L.marker(
+                [40.71291224, -74.01020234],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_0fb7ca9e86bb382a211862a33649535e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7e552baf167dbd39d2fd8571edb14af5.setIcon(icon_0fb7ca9e86bb382a211862a33649535e);
+        
+    
+        var popup_2b0f40c2fd18c66c9911f4651774f420 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1bf842c5286da67909de3b628d021746 = $(`<div id="html_1bf842c5286da67909de3b628d021746" style="width: 100.0%; height: 100.0%;">Station id 5216.04</div>`)[0];
+                popup_2b0f40c2fd18c66c9911f4651774f420.setContent(html_1bf842c5286da67909de3b628d021746);
+            
+        
+
+        marker_7e552baf167dbd39d2fd8571edb14af5.bindPopup(popup_2b0f40c2fd18c66c9911f4651774f420)
+        ;
+
+        
+    
+    
+            marker_7e552baf167dbd39d2fd8571edb14af5.bindTooltip(
+                `<div>
+                     Barclay St & Church St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_85c5c9f8d0f6b0d29f9890a498e0c938 = L.marker(
+                [40.712454915, -74.010822177],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_a4bc147e601467724110b3c1a888ef12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_85c5c9f8d0f6b0d29f9890a498e0c938.setIcon(icon_a4bc147e601467724110b3c1a888ef12);
+        
+    
+        var popup_8ce5cdd251e5616a360f4413e0c1a62a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7857a53a50d7a37eadf53d78f4b5d5f7 = $(`<div id="html_7857a53a50d7a37eadf53d78f4b5d5f7" style="width: 100.0%; height: 100.0%;">Station id 5216.06</div>`)[0];
+                popup_8ce5cdd251e5616a360f4413e0c1a62a.setContent(html_7857a53a50d7a37eadf53d78f4b5d5f7);
+            
+        
+
+        marker_85c5c9f8d0f6b0d29f9890a498e0c938.bindPopup(popup_8ce5cdd251e5616a360f4413e0c1a62a)
+        ;
+
+        
+    
+    
+            marker_85c5c9f8d0f6b0d29f9890a498e0c938.bindTooltip(
+                `<div>
+                     Vesey St & Church St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a241b96031f0914cf333f9011dbd455 = L.marker(
+                [40.713089108, -74.009329319],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_76e52410127d992afb598db1bff1c1a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8a241b96031f0914cf333f9011dbd455.setIcon(icon_76e52410127d992afb598db1bff1c1a2);
+        
+    
+        var popup_e0c999beccfcbfd08a74e6d6235d2f63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1462e31a0727f07b80dfb7c44e658cd8 = $(`<div id="html_1462e31a0727f07b80dfb7c44e658cd8" style="width: 100.0%; height: 100.0%;">Station id 5288.08</div>`)[0];
+                popup_e0c999beccfcbfd08a74e6d6235d2f63.setContent(html_1462e31a0727f07b80dfb7c44e658cd8);
+            
+        
+
+        marker_8a241b96031f0914cf333f9011dbd455.bindPopup(popup_e0c999beccfcbfd08a74e6d6235d2f63)
+        ;
+
+        
+    
+    
+            marker_8a241b96031f0914cf333f9011dbd455.bindTooltip(
+                `<div>
+                     Park Pl & Church St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03edf5d1b8c45d1021910a358b651f65 = L.marker(
+                [40.71473993, -74.00910627],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_933a1a8c9bed8a2418e146aaa30cc2d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_03edf5d1b8c45d1021910a358b651f65.setIcon(icon_933a1a8c9bed8a2418e146aaa30cc2d3);
+        
+    
+        var popup_c414528d9fd673f3194320134d58ca6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3e6d6da987ddc01e34dab5313db8aeb = $(`<div id="html_d3e6d6da987ddc01e34dab5313db8aeb" style="width: 100.0%; height: 100.0%;">Station id 5288.09</div>`)[0];
+                popup_c414528d9fd673f3194320134d58ca6e.setContent(html_d3e6d6da987ddc01e34dab5313db8aeb);
+            
+        
+
+        marker_03edf5d1b8c45d1021910a358b651f65.bindPopup(popup_c414528d9fd673f3194320134d58ca6e)
+        ;
+
+        
+    
+    
+            marker_03edf5d1b8c45d1021910a358b651f65.bindTooltip(
+                `<div>
+                     Warren St & W Broadway
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53082441be1bcae13fce4d81ab166fff = L.marker(
+                [40.714694023, -74.011219382],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_9fa74e61bc1d5697e0a56dc08fc70299 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_53082441be1bcae13fce4d81ab166fff.setIcon(icon_9fa74e61bc1d5697e0a56dc08fc70299);
+        
+    
+        var popup_03bc0567f700414d810c0617cb9231a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6973eb08604a94b65f7a4ca03392424 = $(`<div id="html_e6973eb08604a94b65f7a4ca03392424" style="width: 100.0%; height: 100.0%;">Station id 5288.12</div>`)[0];
+                popup_03bc0567f700414d810c0617cb9231a2.setContent(html_e6973eb08604a94b65f7a4ca03392424);
+            
+        
+
+        marker_53082441be1bcae13fce4d81ab166fff.bindPopup(popup_03bc0567f700414d810c0617cb9231a2)
+        ;
+
+        
+    
+    
+            marker_53082441be1bcae13fce4d81ab166fff.bindTooltip(
+                `<div>
+                     Murray St & Greenwich St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce2a57080d072f5c563f67bdccaabbca = L.marker(
+                [40.7153379, -74.01658354],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_f7d7b01da8a13dfd4cb9316383e51a7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_ce2a57080d072f5c563f67bdccaabbca.setIcon(icon_f7d7b01da8a13dfd4cb9316383e51a7d);
+        
+    
+        var popup_6317bcb42884814fb97b1c4befd2513f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d6c08d68a3c4a52b360bf47cb10ca67 = $(`<div id="html_9d6c08d68a3c4a52b360bf47cb10ca67" style="width: 100.0%; height: 100.0%;">Station id 5297.02</div>`)[0];
+                popup_6317bcb42884814fb97b1c4befd2513f.setContent(html_9d6c08d68a3c4a52b360bf47cb10ca67);
+            
+        
+
+        marker_ce2a57080d072f5c563f67bdccaabbca.bindPopup(popup_6317bcb42884814fb97b1c4befd2513f)
+        ;
+
+        
+    
+    
+            marker_ce2a57080d072f5c563f67bdccaabbca.bindTooltip(
+                `<div>
+                     Vesey Pl & River Terrace
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76453090e7a00f22844f09fc96d13d9e = L.marker(
+                [40.71503, -74.01246],
+                {}
+            ).addTo(map_c2cba7a8c0e8a7667e53644e45caebdc);
+        
+    
+            var icon_af363dbd743d97f3db7087a5e43934e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_76453090e7a00f22844f09fc96d13d9e.setIcon(icon_af363dbd743d97f3db7087a5e43934e6);
+        
+    
+        var popup_8ed61d1a3ccb06b024d9efc7b0d1c80d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f092601a057c50031c34fcb7f5a9bbde = $(`<div id="html_f092601a057c50031c34fcb7f5a9bbde" style="width: 100.0%; height: 100.0%;">Station id 5329.08</div>`)[0];
+                popup_8ed61d1a3ccb06b024d9efc7b0d1c80d.setContent(html_f092601a057c50031c34fcb7f5a9bbde);
+            
+        
+
+        marker_76453090e7a00f22844f09fc96d13d9e.bindPopup(popup_8ed61d1a3ccb06b024d9efc7b0d1c80d)
+        ;
+
+        
+    
+    
+            marker_76453090e7a00f22844f09fc96d13d9e.bindTooltip(
+                `<div>
+                     Murray St & West St
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
