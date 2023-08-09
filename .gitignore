@@ -7,3 +7,4 @@ data/
 models/
 encoders/
 scalers/
+gridsearch/
