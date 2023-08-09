@@ -1,8 +1,9 @@
 import pandas as pd
 import polars as pl
 import glob
-
- # station ids for 30 citi bike stations in lower Manhattan
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 
@@ -184,6 +185,113 @@ def get_station_data(file_path:str)->pl.DataFrame:
     
     return df
 
+def extract_dt_features(df, cyclic=False):
+    df_temp = df.copy()
+
+    if cyclic == False:
+        df_temp['week_number'] = df_temp['started_at_rounded'].dt.isocalendar().week
+        df_temp['month'] = df_temp['started_at_rounded'].dt.month
+        df_temp['weekday'] = df_temp['started_at_rounded'].dt.dayofweek # Mon =0, Sun = 6
+        df_temp['hour'] = df_temp['started_at_rounded'].dt.hour #0 to 23
+    
+    
+    else:
+        df_temp['week_number_sin'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.isocalendar().week/52.0)
+        df_temp['week_number_cos'] = np.cos(2 * np.pi * df_temp['started_at_rounded'].dt.isocalendar().week/52.0)
+        
+        
+        df_temp['month_sin'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.month/12.0)
+        df_temp['month_cos'] = np.cos(2 * np.pi * df_temp['started_at_rounded'].dt.month/12.0)
+        
+        
+        df_temp['weekday_sin'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.dayofweek/7.0)
+        df_temp['weekday_cos'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.dayofweek/7.0) 
+        
+        
+        df_temp['hour_sin'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.hour/24.0) 
+        df_temp['hour_cos'] = np.cos(2 * np.pi * df_temp['started_at_rounded'].dt.hour/24.0) 
+
+    #drop datetime col
+    df_temp.drop('started_at_rounded', axis=1, inplace=True)
+
+    return df_temp
+
+def prep_for_eval(y_real_train, y_real_test, y_pred_train, y_pred_test):
+    return y_real_train.to_list(), y_real_test.to_list(), y_pred_train.tolist(), y_pred_test.tolist()
+
+def error_metrics_report(y_real_train: list, y_real_test: list, y_pred_train: list, y_pred_test: list) -> pd.DataFrame:
+    '''
+    This function takes the real values and any model predictions for the Train and Test sets and returns a Pandas
+    DataFrame with a summary of error metrics for the Train and Test sets like this:
+
+    | Metric | Train | Test |
+    |--------|-------|------|
+    | MAE    | value | value|
+    | MSE    | value | value|
+    | RMSE   | value | value|
+    | R2     | value | value|
+
+    Inputs:
+    y_real_train: Python list with the real values to be predicted in the Train set
+    y_real_test: Python list with the real values to be predicted in the Test set
+    y_pred_train: Python list with the model's predicted values in the Train set
+    y_pred_test:  Python list with the model's predicted values in the Test set
+    '''
+    from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
+    MAE_train = mean_absolute_error(y_real_train, y_pred_train)
+    MAE_test  = mean_absolute_error(y_real_test, y_pred_test)
+
+    # Mean squared error
+    MSE_train = mean_squared_error(y_real_train, y_pred_train)
+    MSE_test  = mean_squared_error(y_real_test, y_pred_test)
+
+    # Root mean squared error
+    RMSE_train = mean_squared_error(y_real_train, y_pred_train, squared=False)
+    RMSE_test  = mean_squared_error(y_real_test,  y_pred_test,  squared=False)
+
+    # R2
+    R2_train = r2_score(y_real_train, y_pred_train)
+    R2_test  = r2_score(y_real_test,  y_pred_test)
+
+    results = {"Metric": ["MAE","MSE", "RMSE", "R2"],
+               "Train": [MAE_train, MSE_train, RMSE_train, R2_train],
+               "Test":  [MAE_test, MSE_test, RMSE_test, R2_test]}
+
+    results_df = pd.DataFrame(results).round(2)
+
+    return results_df
+
+def plot_real_predicted(test_or_train, y_real, y_pred):
+    
+    fig, axs = plt.subplots(3,1, figsize=(24,8))
+    
+    #histogram
+    residual = np.array(y_real) - np.array(y_pred)
+    sns.histplot(residual, ax=axs[0])
+    axs[0].set_xlabel('Residuals')
+    axs[0].set_ylabel('count')
+
+    #scatter - error and y_real
+    sns.scatterplot(x = y_real, y=residual, ax=axs[1])
+    axs[1].set_xlabel('y_real')
+    axs[1].set_ylabel('Residuals')
+
+    #scatterplot
+    sns.scatterplot(x = y_real, y = y_pred, ax=axs[2])
+
+    if test_or_train == 'test':
+        axs[2].set_xlabel('Real Values - Test')
+        axs[2].set_ylabel('Predicted Values - Test')
+
+    else:
+        axs[2].set_xlabel('Real Values - Train')
+        axs[2].set_ylabel('Predicted Values - Train')
+
+    plt.tight_layout()
+    
+    plt.show()
+    
     
 if __name__ == '__main__':
     get_data()
@@ -192,3 +300,7 @@ if __name__ == '__main__':
     concat_dfs()
     yearly_clean_data()
     get_station_data()
+    extract_dt_features()
+    prep_for_eval()
+    error_metrics_report()
+    plot_real_predicted()
