@@ -1,0 +1,24 @@
+data:
+  weather: "../data/raw/archive2.csv"
+  weather_clean: "../data/cleaned/weather_clean.csv"
+  data_station_weather_clean: "../data/cleaned/data_station_weather_clean.csv"
+  data_cleaned_after_exploration: "../data/cleaned/data_cleaned_after_exploration.csv"
+  select_data_with_regions: "../data/cleaned/select_data_with_regions.csv"
+  data_region_cyc: "../data/cleaned/data_region_cyc.csv"
+  data_region_not_cyc: "../data/cleaned/data_not_cyc.csv"
+  all_data: "../data/cleaned/all_data.csv"
+  forecast_3day: "../data/raw/forecast_3day.csv"
+  forecast_3day_clean: "../data/cleaned/forecast_3day_clean.csv"
+  station_info: "../data/cleaned/station_info.csv"
+  prediction_data: "../data/cleaned/prediction_data.csv"
+  data_with_ids_cyc: "../data/cleaned/data_with_ids_cyc.csv"
+
+encoders:
+  encoder: "../encoders/encoder.pkl"
+
+gridsearch:
+  gs_knn: "../gridsearch/knn_gridsearch.pkl"
+  gs_rfr: "../gridsearch/rfr_gridsearch.pkl"
+  gs_gb: "../gridsearch/gb_gridsearch.pkl"
+  gs_gb_no_outliers: "../gridsearch/gb_no_outliers_gridsearch.pkl"
+  gs_gb_no_outliers2: "../gridsearch/gb_no_outliers2_gridsearch.pkl"
