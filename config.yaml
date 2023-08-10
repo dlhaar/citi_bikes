@@ -12,6 +12,7 @@ data:
   station_info: "../data/cleaned/station_info.csv"
   prediction_data: "../data/cleaned/prediction_data.csv"
   data_with_ids_cyc: "../data/cleaned/data_with_ids_cyc.csv"
+  data_with_ids_not_cyc: "../data/cleaned/data_with_ids_not_cyc.csv"
 
 encoders:
   encoder: "../encoders/encoder.pkl"

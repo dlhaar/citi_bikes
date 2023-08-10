@@ -205,7 +205,7 @@ def extract_dt_features(df, cyclic=False):
         
         
         df_temp['weekday_sin'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.dayofweek/7.0)
-        df_temp['weekday_cos'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.dayofweek/7.0) 
+        df_temp['weekday_cos'] = np.cos(2 * np.pi * df_temp['started_at_rounded'].dt.dayofweek/7.0) 
         
         
         df_temp['hour_sin'] = np.sin(2 * np.pi * df_temp['started_at_rounded'].dt.hour/24.0) 
