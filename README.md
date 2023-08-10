@@ -1,28 +1,26 @@
 # Citi Bikes ride predictor
 
-The Citi Bikes ride predictor aims to predict the number of hourly rentals at 30 stations in Lower Manhattan. Hourly weather data (temperature, precipitation, wind speed) was added to the trip information. Using the trip start time, the week number, month, weekday, and hour were extracted. The total number of rides were aggregated by the station and hour. To predict the number of rides, three models were tried out: KNN Regression, Random Forest Regression, and Gradiant Boosting Regression. Several different representations of the station ids and time features were experiemented with. The best results yieled from casting the station ids as floats (and not grouped into regional categories and OneHotEncoded) and representing the time features cyclically (sine and cosine component for each). The best model was the Random Forest model, with an R2 of 0.88 for the train set and 0.79 for the test set. 
+The Citi Bikes ride predictor aims to predict the number of hourly rentals at 30 stations in Lower Manhattan. Hourly weather data (temperature, precipitation, wind speed) were added to the trip information. Using the trip start time, the week number, month, weekday, and hour were extracted. The total number of rides were aggregated by the station and hour. To predict the number of rides, three models were tried out: KNN Regression, Random Forest Regression, and Gradiant Boosting Regression. Several different representations of the station ids and time features were experiemented with. The best results yieled from casting the station ids as floats (and not grouped into regional categories and OneHotEncoded) and representing the time features cyclically (sine and cosine component for each). The best model was the Random Forest model, with an R2 of 0.88 for the train set and 0.79 for the test set. 
 
 
-![Citi Bike stations](src/map_small.jpg "Citi Bike stations")
+![Citi Bike stations](src/map_small.jpg "Citi Bike stations - map created in Folium")
 
 ## Requirements
-To run the notebooks you should have jupyter lab or jupyter notebook installed
+To run the notebooks jupyter lab or jupyter notebook should be installed
 
-Create an environment and run `pip install -r requirements.txt`
+Create and activate an environment. Run `pip install -r requirements.txt`
 
 ## Data
 
 ### Bike data
-The data used in this project is from [Citi Bike NYC](https://citibikenyc.com/system-data).
-
-The data spans from July 2021 to June 2023.
+The data used in this project is from [Citi Bike NYC](https://citibikenyc.com/system-data). The data spans from July 2021 to June 2023.
 
 ### Weather data
 Weather data was obtained from [Open-Meteo](https://open-meteo.com/en/docs/historical-weather-api) with the following settings:
 - Location coordinates for NYC (40.7143, -74.006)
 - Dates: July 1, 2021 and June 30, 2023
-- Hourly weather variables: Temperature, Precipitation, Windspeed(10m) boxs checked
-- Units of measurement: Fahrenheit, inches, Mph
+- Hourly weather variables: Temperature, Precipitation, Windspeed(10m)
+- Units of measurement: fahrenheit, inches, mph
 
 The file should be saved as `data/raw/archive2.csv`
 
